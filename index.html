@@ -1,0 +1,111 @@
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href='https://fonts.googleapis.com/css?family=Merriweather+Sans:400,300,300italic,400italic,700,700italic,800,800italic|Philosopher:400,700,700italic,400italic|Lobster' rel='stylesheet' type='text/css'>
+  <title>Jeff Muller Design</title>
+</head>
+<body>
+  <div class="container">
+    <div class="topBar">
+    </div>
+    <div class="menuBar">
+      <div class="logo">Jeff Muller Design</div>
+      <div class="tagLine"><h2>Passionate designer.</h2></div>
+      <div class="navigation">
+        <div class="navButton">Home</div>
+        <div class="navButton">Portfolio</div>
+        <div class="navButton">Blog</div>
+        <div class="navButton">About</div>
+      </div>
+    </div>
+    <!-- <div class="menuBar sticky">
+      <div class="logo sticky">Jeff Muller Design</div>
+      <div class="tagLine sticky"><h2>Passionate designer.</h2></div>
+      <div class="navigation sticky">
+        <div class="navButton">Home</div>
+        <div class="navButton">Portfolio</div>
+        <div class="navButton">Blog</div>
+        <div class="navButton">About</div>
+      </div>
+    </div> -->
+    </div>
+    <div class="projectHome">
+      <div class="project">
+        <div class="col1">
+        </div>
+        <div class="col2">
+          <div class="projectText">
+            <h1>NFL Injury Tracker</h1>
+            <p>NFL in game sideline injury tracking app designed for NFL trainers and powered by eClinical Works. All clubs will start using the app in 2014.</p>
+          </div>
+          <div class="button white">View more</div>
+        </div>
+        <div class="col3 rightIMG">
+          <div class="projectIMG"><img src="img/portfolio/nfl/nfl-6.png" /></div>
+        </div>
+        <div class="col4">
+        </div>
+      </div>
+      <div class="project">
+        <div class="col1">
+        </div>
+        <div class="col2 leftIMG">
+          <div class="projectIMG"><img src="img/portfolio/auto/auto1.png" /></div>
+        </div>
+        <div class="col3">
+          <div class="projectText">
+            <h1>Auto IVI</h1>
+            <p>I have worked with auto manufacturers and their OEM's' to create in-vehicle-infotainment software concepts for in-unit console and dashboard hardware. </p>
+          </div>
+          <div class="button white">Auto One</div>
+          <div class="button white">Intel</div>
+        </div>
+        <div class="col4">
+        </div>
+      </div>
+      <div class="project">
+        <div class="col1">
+        </div>
+        <div class="col2">
+          <div class="projectText">
+            <h1>Underdog</h1>
+            <p>I know what you're thinking. And the answer is yes. I did create a doggy life jacket.</p>
+          </div>
+          <div class="button white">That's adorable</div>
+        </div>
+        <div class="col3 rightIMG">
+          <div class="projectIMG"><img src="img/portfolio/underdog/underdog2.jpg" /></div>
+        </div>
+        <div class="col4">
+        </div>
+      </div>
+    </div>
+    <div class="moreProjects"><div class="button gray">More Projects</div></div>
+    <div class="blogPost">
+    </div>
+    <div class="blogPost">
+    </div>
+    <div class="morePosts"><div class="button gray">More Posts</div></div>
+    <div class="footer">
+    </div>
+  </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script>
+  $(window).scroll(function() {
+    var top = 0;
+  if ($(this).scrollTop() > 300 && top !=300){
+    $('.menuBar').addClass("sticky");
+    $('.logo').addClass("sticky");
+    $('.tagline').addClass("sticky");
+    $('.navigation').addClass("sticky");
+  }
+  else{
+    $('.menuBar').removeClass("sticky");
+    $('.logo').removeClass("sticky");
+    $('.tagline').removeClass("sticky");
+    $('.navigation').removeClass("sticky");
+  }
+  });
+</script>
+</html>
