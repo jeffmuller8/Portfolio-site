@@ -40,41 +40,39 @@ p {
   height: 10px;
 }
 
-.menuBar {
-  position: relative;
+.hero {
   text-align: center;
-  width: 100%;
   height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
   background-image: url('img/hero.gif');
 }
 
 .logo {
-  top: 40%;
-  position: absolute;
   color: #3299BB;
   text-align: center;
   font-family: 'Lobster', cursive;
   font-size: 40px;
   height: 100px;
-  width: 100%;
 }
 
 .tagLine {
-  top: 50%;
-  position: absolute;
   color: #3299BB;
   text-align: center;
   height: 100px;
-  width: 100%;
 }
 
 .menuBar.sticky {
-  position: fixed;
-  top: -10px;
-  text-align: left;
+  top: 0;
   width: 100%;
-  height: 75px;
-  background-color: #FF9900;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  background-image: url('img/hero.gif');
   z-index: 999;
 }
 
@@ -84,7 +82,6 @@ p {
   font-size: 35px;
   line-height: 75px;
   height: 75px;
-  width: 33.3%;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -93,18 +90,12 @@ p {
 
 .tagLine.sticky {
   top: 0;
-  left: 33.3%;
   height: 75px;
-  width: 33.3%;
   line-height: 55px;
-  display: inline-block;
 }
 
 .navigation.sticky {
   top: 0;
-  right: 0;
-  width: 33.3%;
-  display: inline-block;
 }
 
 .sticky {
@@ -112,14 +103,9 @@ p {
 }
 
 .navigation {
-  margin: auto;
-  top: 60%;
-  position: absolute;
   text-align: center;
-  width: 100%;
   height: 75px;
 }
-
 
 .navButton {
   padding: 0 14px 0 14px;
@@ -137,65 +123,38 @@ p {
   margin-bottom: 2%;
 }
 
-.col1 {
-  margin-left: 5%;
-  width: 15%;
-  height: 100%;
-  float: left;
-  display: inline-block;
-}
-
-.col2 {
-  float: left;
-  width: 30%;
-  height: 100%;
-  display: inline-block;
-}
-
-.col3 {
-  float: left;
-  width: 30%;
-  height: 100%;
-  display: inline-block;
-}
-
-.col4 {
-  width: 15%;
-  height: 100%;
-  display: inline-block;
+.col {
+  margin-left: 2%;
+  width: 600px;
 }
 
 .project {
   padding-top: 5%;
   padding-bottom: 5%;
   background-color: #373f4b;
-  width: 100%;
-  height: 35%;
   border-top: 1px rgba(255,255,255, 0.1) solid;
   border-bottom: 1px #1f252a solid;
+  display: flex;
+  flex-flow: row wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
 }
 
 .project:nth-child(even) {
   background-color: #303843;
 }
 
-.projectText {
-  width: 90%;
-  height: 65%;
-}
-
 .projectIMG {
   margin: auto;
   margin-top: 5%;
   text-align: center;
-  width: 90%;
-  height: 85%;
   perspective: 50em;
 }
 
 .rightIMG img {
   transition: .3s;
-  width: 80%;
+  width: 70%;
   transform: rotateY(-20deg);
   box-shadow: 6px 6px 20px 10px rgba(0,0,0,.1);
 }
@@ -208,7 +167,7 @@ p {
 
 .leftIMG img {
   transition: .3s;
-  width: 80%;
+  width: 70%;
   transform: rotateY(20deg);
   box-shadow: -6px 6px 20px 10px rgba(0,0,0,.1);
 }
@@ -238,7 +197,7 @@ p {
 }
 
 .button {
-  margin: 1%;
+  margin-top: 2%;
   height: 50px;
   width: 200px;
   font-family: 'Merriweather Sans', sans-serif;
