@@ -8,11 +8,11 @@
   <div class="container">
     <div class="topBar">
     </div>
-    <div class="hero">
-      <div class="menuBar">
-        <div class="logo">Jeff Muller Design</div>
-        <div class="tagLine"><h2>Passionate designer.</h2></div>
-        <div class="navigation">
+    <div id="hero">
+      <div id="navBar">
+        <div id="logo">Jeff Muller Design</div>
+        <div id="tagLine"><h2>Passionate designer.</h2></div>
+        <div id="navigation">
           <div class="navButton">Home</div>
           <div class="navButton">Portfolio</div>
           <div class="navButton">Blog</div>
@@ -22,13 +22,13 @@
     </div>
 
     </div>
-    <div class="projectHome">
+    <div id="projectsSnapshot">
       <!--flex-->
         <div class="project">
           <div class="col">
               <h1>NFL Injury Tracker</h1>
               <p>NFL in game sideline injury tracking app designed for NFL trainers and powered by eClinical Works. All clubs will start using the app in 2014.</p>
-            <div class="button white">View more</div>
+            <div class="button color">View more</div>
         </div>
           <div class="col">
                 <div class="projectIMG rightIMG"><img src="img/portfolio/nfl/nfl-6.png" /></div>
@@ -42,8 +42,8 @@
           <div class="col">
             <h1>Auto IVI</h1>
             <p>I have worked with auto manufacturers and their OEM's' to create in-vehicle-infotainment software concepts for in-unit console and dashboard hardware.</p>
-            <div class="button white">Auto One</div>
-            <div class="button white">Intel</div>
+            <div class="button color">Auto One</div>
+            <div class="button color">Intel</div>
           </div>
         </div>
 
@@ -51,7 +51,7 @@
           <div class="col">
             <h1>Underdog</h1>
             <p>I know what you're thinking. And the answer is yes. I did create a doggy life jacket.</p>
-            <div class="button white">That's adorable</div>
+            <div class="button color">That's adorable</div>
           </div>
           <div class="col">
             <div class="projectIMG rightIMG"><img src="img/portfolio/underdog/underdog2.jpg" /></div>
@@ -59,12 +59,12 @@
         </div>
 
     </div>
-    <div class="moreProjects"><div class="button gray">More Projects</div></div>
+    <div class="moreProjects"><div class="button color">More Projects</div></div>
     <div class="blogPost">
     </div>
     <div class="blogPost">
     </div>
-    <div class="morePosts"><div class="button gray">More Posts</div></div>
+    <div class="morePosts"><div class="button color">More Posts</div></div>
     <div class="footer">
     </div>
   </div>
@@ -72,21 +72,32 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 <script>
   $(document).ready(function() {
-    var stickyNavTop = $('.menuBar').offset().top;
+    var stickyNavTop = $('#navBar').offset().top;
 
     var stickyNav = function () {
       var scrollTop = $(window).scrollTop();
 
-      if (scrollTop - 400 > stickyNavTop) {
-        $('.menuBar').addClass("sticky");
-        $('.logo').addClass("sticky");
-        $('.tagline').addClass("sticky");
-        $('.navigation').addClass("sticky");
+      if (scrollTop - 320 > stickyNavTop) {
+        $('#navBar').addClass("navSmall");
       } else {
-        $('.menuBar').removeClass("sticky");
-        $('.logo').removeClass("sticky");
-        $('.tagline').removeClass("sticky");
-        $('.navigation').removeClass("sticky");
+        $('#navBar').removeClass("navSmall");
+      }
+
+
+      if (scrollTop - 400 > stickyNavTop) {
+        $('#navBar').addClass("sticky");
+        $('#navBar').removeClass("navSmall");
+        $('#logo').addClass("sticky");
+        $('#tagLine').addClass("sticky");
+        $('#navigation').addClass("sticky");
+        $('.navButton').addClass("sticky");
+      } else {
+        $('#navBar').removeClass("sticky");
+
+        $('#logo').removeClass("sticky");
+        $('#tagLine').removeClass("sticky");
+        $('#navigation').removeClass("sticky");
+        $('.navButton').removeClass("sticky");
       }
     };
 
