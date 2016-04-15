@@ -1,0 +1,16 @@
+a {
+  text-decoration: none;
+}
+
+#portfolio {
+  background-color: red;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.portfolioThumbnail {
+  margin: 0;
+  padding: 0;
+}

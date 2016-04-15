@@ -13,8 +13,8 @@
         <div id="logo">Jeff Muller Design</div>
         <div id="tagLine"><h2>Passionate designer.</h2></div>
         <div id="navigation">
-          <div class="navButton">Home</div>
-          <div class="navButton">Portfolio</div>
+          <div class="navButton"><a href="index.html">Home</a></div>
+          <div class="navButton"><a href="portfolio.html">Portfolio</a></div>
           <div class="navButton">Blog</div>
           <div class="navButton">About</div>
         </div>
@@ -31,13 +31,13 @@
             <div class="button color">View more</div>
         </div>
           <div class="col">
-                <div class="projectIMG rightIMG"><img src="img/portfolio/nfl/nfl-6.png" /></div>
+                <div class="projectIMG rightIMG"><img src="img/portfolio/nfl/nfl-6.png CHANGEME" /></div>
           </div>
         </div>
 
         <div class="project">
           <div class="col">
-            <div class="projectIMG leftIMG"><img src="img/portfolio/auto/auto1.png" /></div>
+            <div class="projectIMG leftIMG"><img src="img/portfolio/auto/auto1.png CHANGEME" /></div>
           </div>
           <div class="col">
             <h1>Auto IVI</h1>
@@ -54,7 +54,7 @@
             <div class="button color">That's adorable</div>
           </div>
           <div class="col">
-            <div class="projectIMG rightIMG"><img src="img/portfolio/underdog/underdog2.jpg" /></div>
+            <div class="projectIMG rightIMG"><img src="img/portfolio/underdog/underdog2.jpg CHANGEME" /></div>
           </div>
         </div>
 
@@ -70,42 +70,5 @@
   </div>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-<script>
-  $(document).ready(function() {
-    var stickyNavTop = $('#navBar').offset().top;
-
-    var stickyNav = function () {
-      var scrollTop = $(window).scrollTop();
-
-      if (scrollTop - 320 > stickyNavTop) {
-        $('#navBar').addClass("navSmall");
-      } else {
-        $('#navBar').removeClass("navSmall");
-      }
-
-
-      if (scrollTop - 400 > stickyNavTop) {
-        $('#navBar').addClass("sticky");
-        $('#navBar').removeClass("navSmall");
-        $('#logo').addClass("sticky");
-        $('#tagLine').addClass("sticky");
-        $('#navigation').addClass("sticky");
-        $('.navButton').addClass("sticky");
-      } else {
-        $('#navBar').removeClass("sticky");
-
-        $('#logo').removeClass("sticky");
-        $('#tagLine').removeClass("sticky");
-        $('#navigation').removeClass("sticky");
-        $('.navButton').removeClass("sticky");
-      }
-    };
-
-    stickyNav();
-
-    $(window).scroll(function () {
-      stickyNav();
-    });
-  });
-</script>
+<script src="scripts/navigation.js"></script>
 </html>

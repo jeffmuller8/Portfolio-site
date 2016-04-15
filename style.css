@@ -41,6 +41,7 @@ p {
 }
 
 #hero {
+  position: relative;
   text-align: center;
   height: 500px;
   display: flex;
@@ -48,11 +49,82 @@ p {
   justify-content: center;
   align-items: stretch;
   background-image: url('img/hero.gif');
+  opacity: 1;
+  transition: opacity 1s ease-in;
+}
+
+#hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  height: 500px;
+  width: 100%;
+  background: white;
+  opacity: 0;
+  transition: opacity 1s ease-in;
+}
+
+#hero.sticky::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  height: 500px;
+  width: 100%;
+  background: white;
+  opacity: 1;
+  transition: opacity 1s ease-out;
 }
 
 #navBar {
-  transition: max-height .3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  max-height: 400px;
+  transition: max-height .3s ease;
 }
+
+#navBar.minified {
+  top: 0;
+  max-height: 0;
+  transition: max-height .3s ease;
+}
+
+#navBar.sticky.minified {
+  max-height: 0;
+  transition: max-height 1s ease;
+}
+
+.hidden {
+  opacity: 0;
+  transition: max-height .3s ease;
+}
+
+.visible {
+  opacity: 1;
+  transition: max-height .3s ease;
+}
+
+#navBar.sticky {
+  top: 0;
+  max-height: 75px;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  background-color: white;
+  z-index: 999;
+  box-shadow: 0 6px 6px -2px #E1E1E1;
+  transition: max-height .3s ease;
+  border-bottom: 1px solid #C7C7C7;
+}
+
 
 #logo {
   color: #3299BB;
@@ -66,38 +138,6 @@ p {
   color: #3299BB;
   text-align: center;
   height: 100px;
-}
-
-#navBar.sticky {
-  top: 0;
-  width: 100%;
-  position: fixed;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: stretch;
-  background-color: #E9E9E9;
-  z-index: 999;
-  box-shadow: 0 6px 6px -2px #E1E1E1;
-}
-
-#navBar.sticky {
-  max-height: 75px;
-  -webkit-transition: max-height .3s;
-  -moz-transition: max-height .3s;
-  -ms-transition: max-height .3s;
-  -o-transition: max-height .3s;
-  transition: max-height .3s;
-}
-
-.navSmall {
-  max-height: 0;
-  visibility: hidden;
-  -webkit-transition: max-height .3s;
-  -moz-transition: max-height .3s;
-  -ms-transition: max-height .3s;
-  -o-transition: max-height .3s;
-  transition: max-height .3s;
 }
 
 #logo.sticky {
@@ -118,17 +158,13 @@ p {
   line-height: 55px;
 }
 
-#navigation.sticky {
-  top: 0;
-}
-
-.sticky {
-  /*transition: all 1s ease;*/
-}
-
 #navigation {
   text-align: center;
   height: 75px;
+}
+
+#navigation.sticky {
+  top: 0;
 }
 
 .navButton {
@@ -142,11 +178,21 @@ p {
   display: inline-block;
 }
 
+.navButton a {
+  color: white;
+  text-decoration: none;
+}
+
 .navButton.sticky {
   color: #3299BB;
 }
 
-.navButton.sticky:hover {
+.navButton.sticky a {
+  color: #3299BB;
+  text-decoration: none;
+}
+
+.navButton.sticky a:hover {
   color: #FF9900;
   transition: all .1s;
 }
@@ -190,27 +236,27 @@ p {
 }
 
 .rightIMG img {
-  transition: .3s;
+  transition: 1s;
   width: 70%;
   transform: rotateY(-20deg);
   box-shadow: 6px 6px 20px 10px rgba(0,0,0,.1);
 }
 
 .rightIMG img:hover {
-  transition: .3s;
+  transition: 1s;
   transform: rotateY(0);
   box-shadow: 0px 0px 20px 10px rgba(0,0,0,.1);
 }
 
 .leftIMG img {
-  transition: .3s;
+  transition: 1s;
   width: 70%;
   transform: rotateY(20deg);
   box-shadow: -6px 6px 20px 10px rgba(0,0,0,.1);
 }
 
 .leftIMG img:hover {
-  transition: .3s;
+  transition: 1s;
   transform: rotateY(0);
   box-shadow: 0px 0px 20px 10px rgba(0,0,0,.1);
 }
@@ -263,7 +309,7 @@ p {
 }
 
 .color:hover {
-  transition: .3s;
+  transition: 1s;
   color: white;
   background-color: #FF9900;
 }

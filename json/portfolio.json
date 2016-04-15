@@ -1,0 +1,34 @@
+{
+  "projects": [
+      {"Project":"Auto IVI",
+        "Client": "German Automaker",
+        "Date": "December 2014",
+        "Role": "UX designer. Lead visual designer",
+        "Description": "Design a realistic IVI for a German automaker to show-off their new OEM screens at trade shows."
+      },
+      {"Project":"Desktop software",
+        "Client": "Braxton Technologies",
+        "Date": "March 2014",
+        "Role": "Lead visual designer",
+        "Description": "Braxton Technologies hired us to redesign the user interface for their satelite orbit and mission plannning software. They wanted to go with a 'techy' look that represented what their software does. Their current software was based on a standard Windows design with grey windows and unimaginative style. They also requested icon redesigns that were coherent with the new design language and followed current design trends, yet still make sense to existing users."
+      },
+      {"Project":" Youth lifejacket",
+        "Client": "MTI",
+        "Date": "December 2011",
+        "Role": "Industrial designer",
+        "Description": "Redesign a new youth life jacket chasis that was functional for active youths yet cool enough to wear at all times. Youth life jackets present a difficult problem in that they are uncomfortable due to bulk and uncool. We designed a new chasis with flexible foam panels, low cut and well distributed foam for no ride up and slimdesign, a back vent, and a design with anaggressive styling. The jacket came in three colors two of which had a fun tone on tone screen print that gave the fabric a nice texture. Other features include a fleece hand warming pocket, whistle, bright relfective gear, and tuck away straps."
+      },
+      {"Project":"Windows 8 App",
+        "Client": "Def Jam Records",
+        "Date": "December 2013",
+        "Role": "UX designer. Lead visual designer",
+        "Description": "Windows 8 application for Def Jam Records. Designed for discovering and exploring Def Jam artists."
+      },
+      {"Project":"Auto IVI",
+        "Client": "German Automaker",
+        "Date": "December 2014",
+        "Role": "UX designer. Lead visual designer.",
+        "Description": "Design a realistic IVI for a German automaker to show-off their new OEM screens at trade shows."
+      },
+  ]
+}
