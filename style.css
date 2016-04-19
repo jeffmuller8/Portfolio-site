@@ -40,7 +40,7 @@ p {
   height: 10px;
 }
 
-#hero {
+.hero {
   position: relative;
   text-align: center;
   height: 500px;
@@ -49,11 +49,10 @@ p {
   justify-content: center;
   align-items: stretch;
   background-image: url('img/hero.gif');
-  opacity: 1;
-  transition: opacity 1s ease-in;
+  transition: opacity .3s ease-in;
 }
 
-#hero::before {
+/*.hero::before {
   content: "";
   position: absolute;
   top: 0;
@@ -61,57 +60,19 @@ p {
   display: block;
   height: 500px;
   width: 100%;
-  background: white;
   opacity: 0;
-  transition: opacity 1s ease-in;
-}
+  transition: opacity .3s ease-in;
+}*/
 
-#hero.sticky::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: block;
-  height: 500px;
-  width: 100%;
-  background: white;
-  opacity: 1;
-  transition: opacity 1s ease-out;
-}
-
-#navBar {
+.navBar {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: stretch;
-  max-height: 400px;
-  transition: max-height .3s ease;
 }
 
-#navBar.minified {
+.navBar-sticky {
   top: 0;
-  max-height: 0;
-  transition: max-height .3s ease;
-}
-
-#navBar.sticky.minified {
-  max-height: 0;
-  transition: max-height 1s ease;
-}
-
-.hidden {
-  opacity: 0;
-  transition: max-height .3s ease;
-}
-
-.visible {
-  opacity: 1;
-  transition: max-height .3s ease;
-}
-
-#navBar.sticky {
-  top: 0;
-  max-height: 75px;
   width: 100%;
   position: fixed;
   display: flex;
@@ -121,12 +82,35 @@ p {
   background-color: white;
   z-index: 999;
   box-shadow: 0 6px 6px -2px #E1E1E1;
-  transition: max-height .3s ease;
   border-bottom: 1px solid #C7C7C7;
+  transform: translateY(0);
+  transition: transform .3s ease-out;
 }
 
+.navBar-sticky-offPage {
+  transform: translateY(-75px);
+  transition: transform .3s ease-in;
+}
 
-#logo {
+.hidden {
+  opacity: 0;
+  background-color: white;
+  transition: opacity .3s ease-in;
+}
+
+.hidden::before {
+  opacity: 1;
+  background-color: white;
+  transition: opacity .3s ease-in;
+}
+
+.hidden::after {
+  opacity: 1;
+  background-color: white;
+  transition: opacity .3s ease-in;
+}
+
+.logo {
   color: #3299BB;
   text-align: center;
   font-family: 'Lobster', cursive;
@@ -134,13 +118,13 @@ p {
   height: 100px;
 }
 
-#tagLine {
+.tagLine {
   color: #3299BB;
   text-align: center;
   height: 100px;
 }
 
-#logo.sticky {
+.logo-sticky {
   top: 0;
   text-align: left;
   font-size: 35px;
@@ -152,18 +136,18 @@ p {
   border-left: 20px solid rgba(0,0,0,0.0);
 }
 
-#tagLine.sticky {
+.tagLine-sticky {
   top: 0;
   height: 75px;
   line-height: 55px;
 }
 
-#navigation {
+.navigation {
   text-align: center;
   height: 75px;
 }
 
-#navigation.sticky {
+.navigation-sticky {
   top: 0;
 }
 
@@ -183,21 +167,26 @@ p {
   text-decoration: none;
 }
 
-.navButton.sticky {
+.navButton a:hover {
+  color: #424242;
+  text-decoration: none;
+}
+
+.navButton-sticky {
   color: #3299BB;
 }
 
-.navButton.sticky a {
+.navButton-sticky a {
   color: #3299BB;
   text-decoration: none;
 }
 
-.navButton.sticky a:hover {
+.navButton-sticky a:hover {
   color: #FF9900;
   transition: all .1s;
 }
 
-#tagline.sticky h2 {
+.tagline-sticky h2 {
   color: #BCBCBC;
 }
 
@@ -297,6 +286,11 @@ p {
   background-color: rgba(31,37,42,0.1);
 }
 
+.verticalWhiteSpace {
+  width: 100%;
+  height: 300px;
+}
+
 .white {
   color: white;
   /*border: 1px white solid;*/
@@ -326,8 +320,4 @@ p {
   background-color: #424242;
   width: 100%;
   height: 75px;
-}
-
-.hidden {
-  visibility: hidden;
 }

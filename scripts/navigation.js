@@ -1,37 +1,40 @@
 $(document).ready(function() {
-  var stickyNavTop = $('#navBar').offset().top;
+  var stickyNavTop = $('#hero').height();
 
   var stickyNav = function () {
     var scrollTop = $(window).scrollTop();
 
+    var hiddenActive = $('#hero').hasClass('hidden');
+    var stickyNavActive = $('#navBar').hasClass('navBar-sticky');
+    // console.log(foo);
 
-    if (scrollTop - 200 > stickyNavTop) {
-      $('#hero').addClass("sticky");
-      $('#navBar').addClass("minified");
-    } else {
-      $('#hero').removeClass("sticky");
-      $('#navBar').removeClass("sticky");
-      $('#navBar').removeClass("minified");
+
+    if ( scrollTop > stickyNavTop * .35 ) { //&& !hiddenActive
+      $('#hero').addClass("hidden");
+      $('#navBar').addClass("navBar-sticky-offPage");
     }
-    if (scrollTop - 400 > stickyNavTop) {
-      $('#navBar').addClass("sticky");
-      $('#logo').addClass("sticky");
-      $('#tagLine').addClass("sticky");
-      $('#navigation').addClass("sticky");
-      $('.navButton').addClass("sticky");
-      $('#navBar').removeClass("minified");
-    } else if (scrollTop - 200 > stickyNavTop && scrollTop - 400 < stickyNavTop) {
-      $('#navBar').addClass("minified");
-      // $('#navBar').removeClass("sticky");
-      console.log('in between 200 and 400')
-      // $('#navBar').removeClass("sticky");
+
+    if (scrollTop < stickyNavTop * .55) { //&& !hiddenActive
+      $('#hero').removeClass("hidden");
     }
-    else {
-      $('#navBar').removeClass("sticky");
-      $('#logo').removeClass("sticky");
-      $('#tagLine').removeClass("sticky");
-      $('#navigation').removeClass("sticky");
-      $('.navButton').removeClass("sticky");
+
+    if (scrollTop < stickyNavTop * .75) {
+      $('#navBar').removeClass("navBar-sticky-offPage");
+      $('#navBar').removeClass("navBar-sticky");
+      $('#logo').removeClass("logo-sticky");
+      $('#tagLine').removeClass("tagLine-sticky");
+      $('#navigation').removeClass("navigation-sticky");
+      $('.navButton').removeClass("navButton-sticky");
+    }
+
+    if (scrollTop > stickyNavTop + 300 ) { //&& !stickyNavActive
+      $('#navBar').removeClass("navBar-sticky-offPage");
+      $('#hero').removeClass("hidden");
+      $('#navBar').addClass("navBar-sticky");
+      $('#logo').addClass("logo-sticky");
+      $('#tagLine').addClass("tagLine-sticky");
+      $('#navigation').addClass("navigation-sticky");
+      $('.navButton').addClass("navButton-sticky");
     }
   };
 
