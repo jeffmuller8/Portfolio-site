@@ -1,0 +1,106 @@
+---
+---
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: 'Philosopher', sans-serif;
+  font-size: 34px;
+  color: #3299BB;
+}
+
+h2 {
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+h3 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+p {
+  font-family: 'Merriweather Sans', sans-serif;*/
+  font-size: 14px;
+  font-weight: 300;
+  color: #424242;
+}
+.container {
+  margin: 0;
+  padding: 0;
+}
+
+.heroIMG {
+  position: relative;
+  text-align: center;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.projectTitle {
+  font-family: 'Philosopher', sans-serif;
+  font-size: 90px;
+  color: white;
+}
+
+.projectInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.projectDescription {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.portfolioImages {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  width: 50%;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery img {
+  width: 20%;
+}
+
+.gallery a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  text-decoration: none;
+}
+
+li {
+  display: inline;
+  padding: 30px;
+}

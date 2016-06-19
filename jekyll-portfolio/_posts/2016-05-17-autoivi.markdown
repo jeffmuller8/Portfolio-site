@@ -1,0 +1,12 @@
+---
+layout: portfolio
+title: Auto IVI
+heroimage: autoivi/hero.png
+heroalt: Auto IVI Hero
+projectdate: April 2013
+client: German automaker
+role: UX Designer and visual design
+description: Automotive infotainment for a German auto manufacturer. This project lasted two weeks and was primarily designed for tradeshows displaying what the manufacturer is capable of. This was a solo project with limited input from my team. I was the primary designer responsible for creating an IA, deciding which pages to showcase in a visual design, and the visual design work.
+portfolioimages: autoivi/portfolio/
+galleryid: autoivi
+---

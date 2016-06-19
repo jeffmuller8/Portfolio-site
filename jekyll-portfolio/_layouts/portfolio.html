@@ -1,0 +1,70 @@
+---
+layout: portfolio
+---
+<head>
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+  <link rel="stylesheet" type="text/css" href="/css/portfolioposts.css">
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,700,500|Merriweather+Sans:400,300,300italic,400italic,700,700italic,800,800italic|Philosopher:400,700,700italic,400italic|Lobster' rel='stylesheet' type='text/css'>
+  <link href="/lightbox2/src/css/lightbox.css" rel="stylesheet">
+  <style>
+    .heroIMG {
+      background-image: url('/portfolio/{{ page.heroimage }}');
+    }
+  </style>
+</head>
+<article class="post">
+  <div id="navBar" class="navBar-sticky">
+    <div id="logo" class="logo-sticky">Jeff Muller Design</div>
+    <div id="tagLine" class="tagLine-sticky"><h2>Passionate designer.</h2></div>
+    <div id="navigation" class="navigation-sticky">
+      <div class="navButton-sticky"><a href="index.html">Home</a></div>
+      <div class="navButton-sticky"><a href="portfolio.html">Portfolio</a></div>
+      <div class="navButton-sticky"><a href="blog.html">Blog</a></div>
+      <div class="navButton-sticky"><a href="me.html">About</a></div>
+    </div>
+  </div>
+    <!-- <header class="post-header">
+      <h1 class="post-title">{{ page.title }}</h1>
+    </header> -->
+
+
+    <div class="heroIMG"><div class="projectTitle">{{ page.title }}</div></div>
+<!-- <img src="{{ page.heroimage }}" alt="{{ althero }}"/> -->
+  <div class="container">
+    <!-- <div class="heroIMG"><img src="{{ page.heroimage }}" alt="{{ althero }}"/><div class="projectTitle">{{ page.title }}</div></div> -->
+
+    <div class="projectInfo">
+      <div class="projectInfo">
+        <h3>Date: </h3> <h2> {{ page.projectdate }}</h2>
+      </div>
+      <div class="projectInfo">
+        <h3>Client: </h3> <h2> {{ page.client }}</h2>
+      </div>
+      <div class="projectInfo">
+        <h3>Role: </h3> <h2> {{ page.role }}</h2>
+      </div>
+    </div>
+    <div class="projectInfo">
+      <div class="projectInfo projectDescription">
+            <p> {{ page.description }}</p
+        </div>
+    </div>
+    </div>
+    <div class="gallery">
+      {% for gallery in site.data.galleries %}
+      {% if gallery.id == page.galleryid %}
+        <ul>
+        {% for image in gallery.images %}
+          <li>
+            <a href="{{ gallery.imagefolder }}/{{ image.name }}" data-lightbox="{{ gallery.id }}" title="{{ image.text }}">
+              <img src="{{ gallery.imagefolder }}/{{ image.thumb }}">
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+    {% endfor %}
+  </div>
+</article>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script src="/lightbox2/src/js/lightbox.js" rel="stylesheet"></script>

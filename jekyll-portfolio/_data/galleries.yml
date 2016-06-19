@@ -1,0 +1,22 @@
+- id: autoivi
+  description: Auto Invehicle Infotainment
+  imagefolder: /portfolio/autoivi/images
+  images:
+  - name: auto1.png
+    thumb: auto1.png
+    text: In context
+  - name: auto2.png
+    thumb: auto2.png
+    text: Radio
+  - name: auto3.png
+    thumb: auto3.png
+    text: Gas milage
+  - name: auto4.png
+    thumb: auto4.png
+    text: Phone
+  - name: auto5.png
+    thumb: auto5.png
+    text: Receiving a phone call
+  - name: auto6.png
+    thumb: auto6.png
+    text: Phone address book

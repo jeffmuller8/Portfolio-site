@@ -13,31 +13,41 @@ var ui = $('[data-type="ui"]');
 var nodesArray = [].slice.call(document.querySelectorAll(".portfolioCard"));
 
 var dataType = nodesArray.map(function(el) {
-       return el.dataset.type;
-     });
+      return el.dataset.type;
+  });
 
 console.log(dataType);
 
-var filtering = function (obj) {
-  // card.show();
-  // console.log(obj.data("type"));
-  for (i = 0; i < card.length; i++) {
-    // console.log(nodesArray[i].dataset.type, "nodesArray[i]");
-      if (dataType[i] == obj.data("type")) {
-      console.log("true");
-      show(obj);
-    } else {
-      hide(card);
-    }
-  }
-};
+// var filtering = function (obj) {
+//   console.log(obj);
+//   for (i = 0; i < cardArray.length; i++) {
+//       if (dataType[i] != obj.data("type")) {
+//       hide(card);
+//     } else {
+//       show(obj);
+//     }
+//   }
+// };
 
-var show = function (obj) {
-  obj.show();
+var filtering = function(obj) {
+  // var nodesArray = [].slice.call(document.querySelectorAll(".portfolioCard"));
+      //  var foo = nodesArray.filter(function(el) {
+      for (i = 0; i <dataType.length; i++) {
+          if(dataType[i] === obj.data("type")) {
+          show(nodesArray[i]);
+          } else {
+          hide(nodesArray[i]);
+          console.log("different type");
+        }
+      }
+    }
+
+var show = function (el) {
+  $(el).slideDown();
 }
 
-var hide = function (obj) {
-  obj.hide();
+var hide = function (el) {
+  $(el).slideUp();
 }
 
 industrialButton.click(function(e) {
@@ -58,5 +68,5 @@ uiuxButton.click(function(e) {
 
 all.click(function(e) {
   e.preventDefault();
-  card.show();
+  card.slideDown();
 })
