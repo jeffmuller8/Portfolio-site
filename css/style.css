@@ -48,7 +48,7 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: stretch;
-  background-image: url('img/hero.gif');
+  background-image: url('../img/hero.gif');
   transition: opacity .3s ease-in;
 }
 

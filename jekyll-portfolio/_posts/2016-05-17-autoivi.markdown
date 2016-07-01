@@ -1,7 +1,7 @@
 ---
 layout: portfolio
 title: Auto IVI
-heroimage: autoivi/hero.png
+heroimage: autoivi/hero.gif
 heroalt: Auto IVI Hero
 projectdate: April 2013
 client: German automaker

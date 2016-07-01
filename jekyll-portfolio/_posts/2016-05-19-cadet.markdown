@@ -1,0 +1,12 @@
+---
+layout: portfolio
+title: Cadet Lifejacket
+heroimage: cadet/hero.png 
+heroalt: Cadet hero
+projectdate: February 2012
+client: MTI
+role: Industrial designer
+description: Lifejacket designed for youth children under 120 lbs. The requirements were a comfortable jacket for active children who kayak, sail and go general boating. The low profile design allowed for maximum mobility and comfort while maintaining safety and passing the USCG lifejacket requirements. Features includes breathable mesh-back, soft sculpted foam with cuts to allow for flexibility yet utilized as much raw material as possible, hand warming pocket, whistle, and strap management. The fabric also contains a fun screen print on top of an edgy fabric. The styling was fun and aggressive!
+portfolioimages: cadet/portfolio/
+galleryid: cadet
+---

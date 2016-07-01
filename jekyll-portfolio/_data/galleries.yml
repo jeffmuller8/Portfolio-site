@@ -20,3 +20,100 @@
   - name: auto6.png
     thumb: auto6.png
     text: Phone address book
+- id: braxton
+  description: Satelite orbit and mission planning software. I was responsible for the visual design effort. Designed in Photoshop and implemented with QT.
+  imagefolder: /portfolio/braxton/images
+  images:
+    - name: Orbit-Determination-1.png
+      thumb: Orbit-Determination-1.png
+      text: Orbit Determination screen
+    - name: Orbit-Determination-Residuals.png
+      thumb: Orbit-Determination-Residuals.png
+      text: Orbit Determination Residuals. Showing how data should be displayed
+    - name: Vehicle-Dynamics-Manager.png
+      thumb: Vehicle-Dynamics-Manager.png
+      text: Vehicle Dynamics Manager
+    - name: Vehicle-State-Manager.png
+      thumb: Vehicle-State-Manager.png
+      text: Vehicle State Manager
+    - name: Icons-Full.png
+      thumb: Icons-Full.png
+      text: Modern icon design to replace their 'Windows 98' icons
+- id: cadet
+  description: A low profile lifejacket with low profile and aggressive styling meant to keep active children safe while mainting comfort and style.
+  imagefolder: /portfolio/cadet/images
+  images:
+    - name: green.jpg
+      thumb: green.jpg
+      text: Original color assortment
+    - name: cadet1.jpg
+      thumb: cadet1.jpg
+      text: Prpoject requirements
+    - name: cadet3.jpg
+      thumb: cadet3.jpg
+      text: Design exploration
+    - name: cadet2.jpg
+      thumb: cadet2.jpg
+      text: Explanatory sketch
+    - name: cadet4.jpg
+      thumb: cadet4.jpg
+      text: Final presentation
+- id: defjam
+  description: An exploration app for Def Jam Records fans in order to find and experience new artists that the label is promoting.
+  imagefolder: /portfolio/defjam/images
+  images:
+    - name: defjam1.png
+      thumb: defjam1.png
+      text: Home screen
+    - name: defjam2.png
+      thumb: defjam2.png
+      text: Windows 8 Taskbar held a fun easter egg. On the homescreen the app would play music and the taskbar contained turntables that would create distortion sounds.
+    - name: defjam3.png
+      thumb: defjam3.png
+      text: New artists screen
+    - name: defjam4.png
+      thumb: defjam4.png
+      text: Photos screen with Pinterest style collage treatment.
+    - name: defjam5.png
+      thumb: defjam5.png
+      text: Artist landing page
+    - name: defjam6.png
+      thumb: defjam6.png
+      text: Favorited artists page
+    - name: defjam7.png
+      thumb: defjam7.png
+      text: Favorited artists page showing artist information flyout.
+    - name: defjam8.png
+      thumb: defjam8.png
+      text: New artist exploration. Here users select their favorite artists and based on their music the app will display similar artists they may have never heard of.
+- id: hp
+  description: iOS and Android versions of HPs popular conferencing software.
+  imagefolder: /portfolio/hp/images
+  images:
+    - name: hp1.png
+      thumb: hp1.png
+      text: Wireframe of the people screen on android
+    - name: hp2.png
+      thumb: hp2.png
+      text: Their software included a popular feature where users can ask questions so that they wouldn't get burried in a chat. Android wireframe.
+    - name: hp3.png
+      thumb: hp3.png
+      text: Displaying content on an iOS device. Wireframe
+    - name: hp4.png
+      thumb: hp4.png
+      text: Contacts. iOS visual design.
+    - name: hp5.png
+      thumb: hp5.png
+      text: Chat. iOS visua design.
+    - name: hp6.png
+      thumb: hp6.png
+      text: Video conference. The chat leader is up top and the green outline disignates that he is speaking. The actions uptop relate to the user of the device and are important chat functions such as mute and raising a hand.
+    - name: hp7.png
+      thumb: hp7.png
+      text: Notifications flyout for android.
+    - name: hp8.png
+      thumb: hp8.png
+      text: Chat function on an android device in portrait mode.
+    - name: hp9.png
+      thumb: hp9.png
+      text: Video confernecing on an android device in potrait mode.

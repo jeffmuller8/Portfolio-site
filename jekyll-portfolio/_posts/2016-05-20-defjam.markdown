@@ -1,0 +1,12 @@
+---
+layout: portfolio
+title: Def Jam Records Windows 8 App
+heroimage: defjam/hero.gif
+heroalt: Def Jam Hero
+projectdate: December 2013
+client: Def Jam Records
+role: UX Designer and visual design
+description: Def Jam Records and Microsoft came to us to design a brand new experience for a Windows 8 presence. The challenge was to design an app based on their current website at the time. The design had to allow for exploration of Def Jam Record members, fit into the Windows 8 ecosystem, and be as creative and fresh as the company itself. We reimagined an experience based on their site an d offered a fun feature for users to pick their favorite artists as ingredients for criteria to explore new artists they may have never heard of.
+portfolioimages: defjam/portfolio/
+galleryid: defjam
+---

@@ -1,0 +1,12 @@
+---
+layout: portfolio
+title: Braxton Technologies
+heroimage: braxton/hero.gif
+heroalt: Braxton Hero
+projectdate: March 2014
+client: Braxton Technologies
+role: UI designer
+description: Satelite orbit and mission planning software. Designed in Photoshop and implemented with QT. Braxton was a visual design effort.
+portfolioimages: braxton/portfolio/
+galleryid: braxton
+---
