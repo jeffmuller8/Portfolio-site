@@ -1,0 +1,12 @@
+---
+layout: portfolio
+title: In-Vehicle-Infotainment
+heroimage: ivi/hero.gif
+heroalt: IVI Hero
+projectdate: December 2014
+client: Intel
+role: UX Designer and visual design
+description: Infotainment system that is used for trade show demo’s but could look like it can be safely used in a vehicle.
+portfolioimages: ivi/portfolio/
+galleryid: ivi
+---

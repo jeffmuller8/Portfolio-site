@@ -117,3 +117,34 @@
     - name: hp9.png
       thumb: hp9.png
       text: Video confernecing on an android device in potrait mode.
+- id: ivi
+  description: IVI software displaying Intel's in-car-touchscreen hardware. The client asked for a realistic looking IVI that could potentially be in a luxury vehicle. Our choice was to use skeuomorphic design and used German car styling.
+  imagefolder: /portfolio/ivi/images
+  images:
+    - name: home1.png
+      thumb: home1.png
+      text: Homescreen with dark theme. Used for nighttime driving.
+    - name: home_day.png
+      thumb: home_day.png
+      text: Day mode (light theme) of the home screen.
+    - name: phone.png
+      thumb: phone.png
+      text: Phone screen  pairs with your cellphone via Bluetooth. Their hardware can read your contact list, make phone calls, receive text messages, and voicemails.
+    - name: climate1.png
+      thumb: climate1.png
+      text: Climate control
+    - name: climate_off.gif
+      thumb: climate_off.gif
+      text: Climate turn on sequence.
+    - name: media_source.png
+      thumb: media_source.png
+      text: Select media source.
+    - name: media_bluetooth.png
+      thumb: media_bluetooth.png
+      text: Media screen using bluetooth to connect to a media device such as an iPod or cellphone.
+    - name: media_cd.png
+      thumb: media_cd.png
+      text: Media screen showing the CD player. The design calls for reading the artwork and selecting the dominant color which is then used in the progress bar.
+    - name: media_video.png
+      thumb: media_video.png
+      text: When you want to watch a video while driving ¯\_(ツ)_/¯

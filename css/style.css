@@ -81,7 +81,7 @@ p {
   align-items: stretch;
   background-color: white;
   z-index: 999;
-  box-shadow: 0 6px 6px -2px #E1E1E1;
+  box-shadow: 0 6px 6px -2px rgba(10,10,10,0.1);
   border-bottom: 1px solid #C7C7C7;
   transform: translateY(0);
   transition: transform .3s ease-out;
